@@ -8,7 +8,7 @@
     "packageManager": "pnpm@11.18.0",
     "exports": {
         "./tsconfig/base": "./src/tsconfig/base.json",
-        "./eslint/base": "./src/eslint/base.js",
+        "./eslint/base": "./src/eslint/base.ts",
         "./prettier/base": "./src/prettier/base.ts"
     },
     "peerDependencies": {
