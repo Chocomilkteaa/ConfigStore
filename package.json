@@ -8,5 +8,19 @@
     "packageManager": "pnpm@11.18.0",
     "exports": {
         "./tsconfig/base": "./src/tsconfig/base.json"
+    },
+    "peerDependencies": {
+        "eslint": "^10.8.1",
+        "jiti": "^2.7.0"
+    },
+    "devDependencies": {
+        "eslint": "^10.8.1",
+        "jiti": "^2.7.0"
+    },
+    "dependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^17.11.0",
+        "typescript-eslint": "^8.67.0"
     }
 }
