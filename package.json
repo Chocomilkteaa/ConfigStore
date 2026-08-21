@@ -11,6 +11,9 @@
         "./eslint/base": "./src/eslint/base.ts",
         "./prettier/base": "./src/prettier/base.ts"
     },
+    "files": [
+        "src"
+    ],
     "peerDependencies": {
         "eslint": "^10.8.1",
         "jiti": "^2.7.0",
