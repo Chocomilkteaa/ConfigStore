@@ -32,5 +32,4 @@
     "erasableSyntaxOnly": true, // Only erase syntax that can be safely removed without affecting type information
     "verbatimModuleSyntax": true // Preserve original module syntax in emitted JavaScript, even if it differs from the TypeScript source
   },
-  "include": ["../**/*.ts", "**/*.tsx"]
 }
