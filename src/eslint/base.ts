@@ -26,7 +26,25 @@ const config = defineConfig(
       parserOptions: {
         projectService: true,
       },
-    }
+    },
+    rules: {
+      "@typescript-eslint/restrict-template-expressions": [
+        "error",
+        {
+          allowNumber: true, // ALLOW: Safely casts numbers to strings in templates
+        },
+      ],
+      // Flags declared but unused variables while allowing intentionally ignored names prefixed with _.
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
+      ],
+    },
   },
   eslintConfigPrettier
 );
