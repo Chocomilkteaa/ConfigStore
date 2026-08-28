@@ -1,6 +1,6 @@
 {
     "name": "@chocomilktea/config-store",
-    "version": "0.0.1-dev.9",
+    "version": "0.0.1-dev.10",
     "publishConfig": {
         "access": "public"
     },
