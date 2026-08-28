@@ -14,6 +14,8 @@ const config = defineConfig(
       "@typescript-eslint/no-unsafe-assignment": "off",
       // Allows passing loosely typed values in test helper flows.
       "@typescript-eslint/no-unsafe-argument": "off",
+      // Allows returning loosely typed values in test helper flows.
+      "@typescript-eslint/no-unsafe-return": "off",
       // Permits explicit any in tests to reduce noise for pragmatic test code.
       "@typescript-eslint/no-explicit-any": "off",
     },
