@@ -44,6 +44,8 @@ const config = defineConfig(
           ignoreRestSiblings: true,
         },
       ],
+      // Disables the automatic sorting of module declarations to allow custom ordering.
+      'perfectionist/sort-modules': 'off',
     },
   },
   eslintConfigPrettier
