@@ -50,8 +50,9 @@ const config = defineConfig(
         {
           type: 'unsorted',
           groups: [
-            'interface',
+            ['interface', 'type'],
             'variable',
+            'class',
             'function',
           ],
         }
