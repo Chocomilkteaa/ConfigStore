@@ -8,7 +8,8 @@ import globals from "globals";
 const config = defineConfig(
   {
     ignores: [
-      "node_modules/",
+      "node_modules",
+      "dist"
     ],
     extends: [
       eslintJs.configs.recommended,
