@@ -48,13 +48,7 @@ const config = defineConfig(
       'perfectionist/sort-modules': [
         'error',
         {
-          type: 'unsorted',
-          groups: [
-            ['interface', 'type'],
-            'variable',
-            'class',
-            'function',
-          ],
+          type: 'usage',
         }
       ],
     },
