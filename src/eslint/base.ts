@@ -2,6 +2,7 @@ import eslintJs from "@eslint/js";
 import typescriptEslint from "typescript-eslint";
 import { defineConfig } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
+import perfectionist from "eslint-plugin-perfectionist";
 import globals from "globals";
 
 const config = defineConfig(
@@ -13,6 +14,7 @@ const config = defineConfig(
       eslintJs.configs.recommended,
       typescriptEslint.configs.strictTypeChecked,
       typescriptEslint.configs.stylisticTypeChecked,
+      perfectionist.configs["recommended-natural"],
     ],
     languageOptions: {
       globals: {
