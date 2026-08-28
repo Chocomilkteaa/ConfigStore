@@ -45,7 +45,17 @@ const config = defineConfig(
         },
       ],
       // Disables the automatic sorting of module declarations to allow custom ordering.
-      'perfectionist/sort-modules': 'off',
+      'perfectionist/sort-modules': [
+        'error',
+        {
+          type: 'unsorted',
+          groups: [
+            'interface',
+            'variable',
+            'function',
+          ],
+        }
+      ],
     },
   },
   eslintConfigPrettier
