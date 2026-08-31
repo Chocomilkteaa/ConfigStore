@@ -6,7 +6,8 @@ const config = defineConfig(
   vitest.configs.recommended,
   {
     ignores: [
-      "node_modules/",
+      "node_modules",
+      "dist"
     ],
     files: ["**/*.{test,spec}.{ts,tsx}"],
     rules: {
