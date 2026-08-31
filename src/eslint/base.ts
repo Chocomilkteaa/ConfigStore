@@ -11,6 +11,7 @@ const config = defineConfig(
       "node_modules",
       "dist"
     ],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       eslintJs.configs.recommended,
       typescriptEslint.configs.strictTypeChecked,
