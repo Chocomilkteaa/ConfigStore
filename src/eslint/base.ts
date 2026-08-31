@@ -7,10 +7,7 @@ import globals from "globals";
 
 const config = defineConfig(
   {
-    ignores: [
-      "node_modules",
-      "dist"
-    ],
+    ignores: ["**/node_modules/**", "**/dist/**"],
     files: ["**/*.{ts,tsx}"],
     extends: [
       eslintJs.configs.recommended,
