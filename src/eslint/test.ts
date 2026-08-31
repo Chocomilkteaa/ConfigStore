@@ -5,11 +5,7 @@ import vitest from "@vitest/eslint-plugin";
 const config = defineConfig(
   vitest.configs.recommended,
   {
-    ignores: [
-      "node_modules",
-      "dist"
-    ],
-    files: ["**/*.{test,spec}.{ts,tsx}"],
+    files: ["**/tests/**/*.{test,spec}.{ts,tsx}"],
     rules: {
       // Relaxes strict typing constraints in tests where dynamic values are common.
       "@typescript-eslint/no-unsafe-assignment": "off",
