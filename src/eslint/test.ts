@@ -16,7 +16,14 @@ const config = defineConfig(
       "vitest/no-standalone-expect": [
         "error",
         {
-          additionalTestBlockFunctions: ["it", "test"],
+          additionalTestBlockFunctions: [
+            "it",
+            "it.for",
+            "it.each",
+            "test",
+            "test.for",
+            "test.each",
+          ],
         },
       ],
     },
