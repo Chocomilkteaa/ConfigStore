@@ -1,8 +1,8 @@
 import { type Config } from "prettier";
 
 const config: Config = {
-    printWidth: 150,
-    plugins: ["prettier-plugin-packagejson"],
+  plugins: ["prettier-plugin-packagejson"],
+  printWidth: 150,
 };
 
 export default config;

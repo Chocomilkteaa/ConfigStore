@@ -1,10 +1,10 @@
-import { defineConfig } from "eslint/config";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
 import react from "@eslint-react/eslint-plugin";
-import reactRefresh from "eslint-plugin-react-refresh";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 import jsxA11y from "eslint-plugin-jsx-a11y";
-import typescriptEslint from "typescript-eslint";
+import reactRefresh from "eslint-plugin-react-refresh";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
+import typescriptEslint from "typescript-eslint";
 
 const config = defineConfig(
   reactRefresh.configs.vite,
@@ -13,14 +13,14 @@ const config = defineConfig(
   {
     ignores: ["**/node_modules/**", "**/dist/**", "**/.react-router/**"],
     languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.es2026,
+      },
       parser: typescriptEslint.parser,
       parserOptions: {
         ecmaFeatures: { jsx: true },
         projectService: true,
-      },
-      globals: {
-        ...globals.browser,
-        ...globals.es2026,
       },
     },
     rules: {
@@ -32,7 +32,7 @@ const config = defineConfig(
       ],
     },
   },
-  eslintConfigPrettier
+  eslintConfigPrettier,
 );
 
 export default config;

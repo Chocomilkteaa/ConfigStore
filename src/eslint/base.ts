@@ -1,56 +1,56 @@
 import eslintJs from "@eslint/js";
-import typescriptEslint from "typescript-eslint";
-import { defineConfig } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import perfectionist from "eslint-plugin-perfectionist";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
+import typescriptEslint from "typescript-eslint";
 
 const config = defineConfig(
   {
-    ignores: ["**/node_modules/**", "**/dist/**"],
-    files: ["**/*.{ts,tsx}"],
     extends: [
       eslintJs.configs.recommended,
       typescriptEslint.configs.strictTypeChecked,
       typescriptEslint.configs.stylisticTypeChecked,
       perfectionist.configs["recommended-natural"],
     ],
+    files: ["**/*.{ts,tsx}"],
+    ignores: ["**/node_modules/**", "**/dist/**"],
     languageOptions: {
+      ecmaVersion: "latest",
       globals: {
         ...globals.es2026,
         ...globals.node,
       },
-      ecmaVersion: "latest",
-      sourceType: "module",
       parserOptions: {
         projectService: true,
       },
+      sourceType: "module",
     },
     rules: {
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+          varsIgnorePattern: "^_",
+        },
+      ],
       "@typescript-eslint/restrict-template-expressions": [
         "error",
         {
           allowNumber: true, // Allows numbers in template expressions. Ex. `${42}`
         },
       ],
-      "@typescript-eslint/no-unused-vars": [
+      "perfectionist/sort-modules": [
         "error",
         {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
-          destructuredArrayIgnorePattern: "^_",
-          ignoreRestSiblings: true,
+          type: "usage",
         },
-      ],
-      'perfectionist/sort-modules': [
-        'error',
-        {
-          type: 'usage',
-        }
       ],
     },
   },
-  eslintConfigPrettier
+  eslintConfigPrettier,
 );
 
 export default config;
