@@ -30,10 +30,9 @@ const config = defineConfig(
       "@typescript-eslint/restrict-template-expressions": [
         "error",
         {
-          allowNumber: true, // ALLOW: Safely casts numbers to strings in templates
+          allowNumber: true, // Allows numbers in template expressions. Ex. `${42}`
         },
       ],
-      // Flags declared but unused variables while allowing intentionally ignored names prefixed with _.
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
@@ -43,7 +42,6 @@ const config = defineConfig(
           ignoreRestSiblings: true,
         },
       ],
-      // Disables the automatic sorting of module declarations to allow custom ordering.
       'perfectionist/sort-modules': [
         'error',
         {
