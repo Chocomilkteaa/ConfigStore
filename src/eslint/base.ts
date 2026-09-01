@@ -17,7 +17,7 @@ const config = defineConfig(
     ],
     languageOptions: {
       globals: {
-        ...globals.es2024,
+        ...globals.es2026,
         ...globals.node,
       },
       ecmaVersion: "latest",
