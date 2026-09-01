@@ -1,25 +1,23 @@
 {
   "$schema": "https://www.schemastore.org/tsconfig",
   "compilerOptions": {
-    "lib": ["es2024", "ESNext.Array", "ESNext.Collection", "ESNext.Error", "ESNext.Iterator", "ESNext.Promise"],
+    "lib": [
+      "ESNext"
+    ],
     "module": "nodenext",
     "moduleResolution": "nodenext",
-
     /* Output */
     "noEmit": true, // Don't emit any output; use this configuration for type-checking only
-
     /* Integration & Security */
     "esModuleInterop": true, // Compatibility with legacy CJS packages
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true, // Speed up build; skip checking @types files
     "resolveJsonModule": true, // Allows importing .json files directly
-
     /* Code Quality */
     "noUnusedLocals": true, // Throws an error if declaring a variable inside a function or a file but never used.
     "noUnusedParameters": true, // Throws if a function receives a parameter it doesn't use
     "noImplicitReturns": true, // Ensures that every possible path in a function returns a value
     "noFallthroughCasesInSwitch": true, // Prevent accidentally "fall through" from one switch case to the next because you forgot a break or return
-
     /* Type Stripping */
     "rewriteRelativeImportExtensions": true, // Automatically rewrite .ts to .js in import paths
     "erasableSyntaxOnly": true, // Only erase syntax that can be safely removed without affecting type information
