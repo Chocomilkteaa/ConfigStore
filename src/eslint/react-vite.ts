@@ -21,6 +21,7 @@ const config = defineConfig(
       parserOptions: {
         ecmaFeatures: { jsx: true },
         projectService: true,
+        tsconfigRootDir: __dirname,
       },
     },
     rules: {
