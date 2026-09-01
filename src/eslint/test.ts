@@ -5,7 +5,7 @@ import { defineConfig } from "eslint/config";
 const config = defineConfig(
   vitest.configs.recommended,
   {
-    files: ["**/tests/**/*.{test,spec,mock}.{ts,tsx}"],
+    files: ["**/tests/**/*.{test,spec,mock,util}.{ts,tsx}"],
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-unsafe-argument": "off",
