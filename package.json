@@ -12,10 +12,10 @@
     "exports": {
         "./tsconfig/base": "./dist/tsconfig/base.json",
         "./tsconfig/node": "./dist/tsconfig/node.json",
-        "./eslint/base": "./dist/eslint/base.ts",
-        "./eslint/test": "./dist/eslint/test.ts",
-        "./eslint/react-vite": "./dist/eslint/react-vite.ts",
-        "./prettier/base": "./dist/prettier/base.ts"
+        "./eslint/base": "./dist/eslint/base.js",
+        "./eslint/test": "./dist/eslint/test.js",
+        "./eslint/react-vite": "./dist/eslint/react-vite.js",
+        "./prettier/base": "./dist/prettier/base.js"
     },
     "files": [
         "dist"
