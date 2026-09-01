@@ -13,6 +13,12 @@ const config = defineConfig(
       "@typescript-eslint/no-unsafe-call": "off",
       "@typescript-eslint/no-unsafe-member-access": "off",
       "@typescript-eslint/no-unsafe-return": "off",
+      "vitest/no-standalone-expect": [
+        "error",
+        {
+          additionalTestBlockFunctions: ["it", "test"],
+        },
+      ],
     },
   },
   eslintConfigPrettier,
