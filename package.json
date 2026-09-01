@@ -5,6 +5,7 @@
   "exports": {
     "./tsconfig/base": "./dist/tsconfig/base.json",
     "./tsconfig/node": "./dist/tsconfig/node.json",
+    "./tsconfig/react-vite": "./dist/tsconfig/react-vite.json",
     "./eslint/base": "./dist/eslint/base.js",
     "./eslint/test": "./dist/eslint/test.js",
     "./eslint/react-vite": "./dist/eslint/react-vite.js",
