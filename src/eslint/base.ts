@@ -23,6 +23,7 @@ const config = defineConfig(
       },
       parserOptions: {
         projectService: true,
+        tsconfigRootDir: __dirname,
       },
       sourceType: "module",
     },
