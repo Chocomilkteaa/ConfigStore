@@ -1,0 +1,7 @@
+{
+  "extends": "./src/tsconfig/node.json",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "include": ["src/**/*.ts", "eslint.config.ts", "prettier.config.ts"]
+}
