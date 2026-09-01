@@ -10,16 +10,19 @@
     },
     "packageManager": "pnpm@11.18.0",
     "exports": {
-        "./tsconfig/base": "./src/tsconfig/base.json",
-        "./tsconfig/node": "./src/tsconfig/node.json",
-        "./eslint/base": "./src/eslint/base.ts",
-        "./eslint/test": "./src/eslint/test.ts",
-        "./eslint/react-vite": "./src/eslint/react-vite.ts",
-        "./prettier/base": "./src/prettier/base.ts"
+        "./tsconfig/base": "./dist/tsconfig/base.json",
+        "./tsconfig/node": "./dist/tsconfig/node.json",
+        "./eslint/base": "./dist/eslint/base.ts",
+        "./eslint/test": "./dist/eslint/test.ts",
+        "./eslint/react-vite": "./dist/eslint/react-vite.ts",
+        "./prettier/base": "./dist/prettier/base.ts"
     },
     "files": [
-        "src"
+        "dist"
     ],
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json && mkdir -p dist/tsconfig/ && cp src/tsconfig/*.json dist/tsconfig/"
+    },
     "peerDependencies": {
         "eslint": "^10.8.1",
         "jiti": "^2.7.0",
