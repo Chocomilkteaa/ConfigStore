@@ -25,7 +25,7 @@ function createConfig(options: CreateConfigOptions): ConfigObject[] {
         },
         parserOptions: {
           projectService: true,
-          tsconfigRootDir: __dirname,
+          tsconfigRootDir: process.cwd(),
         },
         sourceType: "module",
         ...options.languageOptions,
