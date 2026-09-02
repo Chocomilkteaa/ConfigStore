@@ -8,7 +8,7 @@ function createConfig(options: CreateConfigOptions): ConfigObject[] {
     vitest.configs.recommended,
     {
       files: options.files ?? ["**/tests/**/*.{test,spec,mock,util}.{ts,tsx}"],
-      ignores: options.ignores,
+      ignores: options.ignores ?? [],
       languageOptions: {
         globals: {
           ...vitest.environments.env.globals,

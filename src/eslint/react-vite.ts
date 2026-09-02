@@ -13,7 +13,7 @@ function createConfig(options: CreateConfigOptions): ConfigObject[] {
     jsxA11y.flatConfigs.recommended,
     react.configs["strict-typescript"],
     {
-      files: options.files,
+      files: options.files ?? ["**/*.{ts,tsx}"],
       ignores: options.ignores ?? ["**/node_modules/**", "**/dist/**", "**/.react-router/**"],
       languageOptions: {
         globals: {
