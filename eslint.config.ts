@@ -1,3 +1,3 @@
-import baseConfig from "./src/eslint/base.ts";
+import { createConfig } from "./src/eslint/node.ts";
 
-export default [...baseConfig];
+export default createConfig({});

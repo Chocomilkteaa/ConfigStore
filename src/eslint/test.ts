@@ -1,6 +1,7 @@
 import vitest from "@vitest/eslint-plugin";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
-import { defineConfig, type ConfigObject } from "eslint/config";
+import { type ConfigObject, defineConfig } from "eslint/config";
+
 import type { CreateConfigOptions } from "./createConfig.type.ts";
 
 function createConfig(options: CreateConfigOptions): ConfigObject[] {

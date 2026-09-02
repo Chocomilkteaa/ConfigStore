@@ -1,9 +1,10 @@
 import eslintJs from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import perfectionist from "eslint-plugin-perfectionist";
-import { defineConfig, type ConfigObject } from "eslint/config";
+import { type ConfigObject, defineConfig } from "eslint/config";
 import globals from "globals";
 import typescriptEslint from "typescript-eslint";
+
 import type { CreateConfigOptions } from "./createConfig.type.ts";
 
 function createConfig(options: CreateConfigOptions): ConfigObject[] {

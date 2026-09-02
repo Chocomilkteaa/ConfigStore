@@ -3,8 +3,8 @@ import type { Linter } from "eslint";
 interface CreateConfigOptions {
     files?: string[];
     ignores?: string[];
-    rules?: Linter.RulesRecord;
     languageOptions?: Linter.LanguageOptions;
+    rules?: Linter.RulesRecord;
 }
 
 export type { CreateConfigOptions };

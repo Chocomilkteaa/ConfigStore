@@ -2,9 +2,10 @@ import react from "@eslint-react/eslint-plugin";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import reactRefresh from "eslint-plugin-react-refresh";
-import { defineConfig, type ConfigObject } from "eslint/config";
+import { type ConfigObject, defineConfig } from "eslint/config";
 import globals from "globals";
 import typescriptEslint from "typescript-eslint";
+
 import type { CreateConfigOptions } from "./createConfig.type.ts";
 
 function createConfig(options: CreateConfigOptions): ConfigObject[] {
