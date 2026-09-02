@@ -24,7 +24,7 @@ function createConfig(options: CreateConfigOptions): ConfigObject[] {
         parserOptions: {
           ecmaFeatures: { jsx: true },
           projectService: true,
-          tsconfigRootDir: __dirname,
+          tsconfigRootDir: process.cwd(),
         },
         ...options.languageOptions,
       },
